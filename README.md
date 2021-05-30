@@ -16,7 +16,7 @@ This API is a simplified version of news provider API.
 
 ## First steps
 
-1. You'll need Node.JS and PostgreSQL 10
+1. You'll need Node.JS 12 and PostgreSQL 10
 2. Install dependences with `npm install`
 3. Set environment variables creating a copy of `.env.example` in `.env`
 4. Run `docker-compose up` to start PostgreSQL DB

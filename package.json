@@ -14,7 +14,7 @@
     "build": "webpack",
     "prod": "node dist/api.bundle.js",
     "dev": "cross-env NODE_ENV=development nodemon --watch src --exec babel-node src/app.js",
-    "migration:run": "knex migrate:create",
+    "migration:run": "knex migrate:latest",
     "test": "jest"
   },
   "devDependencies": {
