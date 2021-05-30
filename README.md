@@ -1,5 +1,11 @@
 # Jungle Devs - Node Challenge #001 👋
 
+## API Collection
+
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Node%20Challenge&uri=https%3A%2F%2Fgist.github.com%2Fsantoscigor%2F282c703a4a761f4d57b6dd35a7194760)
+
+Postman collection version: https://documenter.getpostman.com/view/10409540/TzXzEHV6
+
 ## Description
 
 This API is a simplified version of news provider API.
