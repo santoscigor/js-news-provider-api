@@ -1,4 +1,4 @@
-# Jungle Devs - Node Challenge #001 👋
+# JS News provider API #001 👋
 
 ## API Collection
 
@@ -19,6 +19,28 @@ This API is a simplified version of news provider API.
 - Query optimization;
 - Serialization;
 - Production builds.
+
+## TODO
+
+- Use seeders to insert at least an admin user or a command to insert a super-user, instead of using "isAdmin" as a flag.
+
+- Validate field types at database, returning 400 exception instead of 500; 
+
+- Validate field types at signup endpoint; 
+
+- Add tests; 
+
+- Remove bodyparser (deprecated) and add “express.json” with “express.urlencoded”; 
+
+- Return user object on signup;
+
+- Return user object without password but with jwt token on login; 
+
+- Add custom validator para accept only URL type on picture field;
+
+- Add payload for (/api/articles?category=:slug);
+
+- Add payload for (/api/articles/:id);
 
 ## First steps
 
