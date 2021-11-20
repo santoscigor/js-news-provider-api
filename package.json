@@ -15,6 +15,8 @@
     "prod": "node dist/api.bundle.js",
     "dev": "cross-env NODE_ENV=development nodemon --watch src --exec babel-node src/app.js",
     "migration:run": "knex migrate:latest",
+    "eslint:fix": "eslint --fix '**/*.{t,j}s'",
+    "eslint:check": "eslint '**/*.{t,j}s'",
     "test": "jest"
   },
   "devDependencies": {
@@ -22,6 +24,7 @@
     "@babel/node": "^7.12.6",
     "@babel/preset-env": "^7.14.2",
     "cross-env": "^7.0.3",
+    "eslint": "^8.2.0",
     "nodemon": "^2.0.6",
     "supertest": "^6.1.3",
     "webpack": "^5.38.1",
