@@ -1,13 +1,13 @@
-exports.up = function(knex, Promise) {
+export function up(knex) {
     return knex.schema.createTable("users", table => {
         table["uuid"]("id").primary();
-        table.boolean("is_admin").defaultTo("false").notNullable()
+        table.boolean("is_admin").defaultTo("false").notNullable();
         table.text("username").notNullable();
         table.text("password").notNullable();
         table.timestamps(true, true);
     });
-};
+}
 
-exports.down = function(knex, Promise) {
+export function down(knex) {
     return knex.schema.dropTable("users");
-};
+}

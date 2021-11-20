@@ -1,9 +1,8 @@
-const path = require('path');
-const { IgnorePlugin } = require('webpack');
+import { resolve } from "path";
+import { IgnorePlugin } from "webpack";
 
-module.exports = {
-  entry: './src/app.js',
-  plugins: [
+export const entry = "./src/app.js";
+export const plugins = [
     new IgnorePlugin({ resourceRegExp: /^pg-native$/ }),
     new IgnorePlugin({ resourceRegExp: /^sqlite3$/ }),
     new IgnorePlugin({ resourceRegExp: /^pg-query-stream$/ }),
@@ -14,10 +13,9 @@ module.exports = {
     new IgnorePlugin({ resourceRegExp: /^mssql\/lib\/base$/ }),
     new IgnorePlugin({ resourceRegExp: /^mssql$/ }),
     new IgnorePlugin({ resourceRegExp: /^tedious$/ }),
-  ],
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'api.bundle.js'
-  },
-  target: 'node'
+];
+export const output = {
+    path: resolve(__dirname, "dist"),
+    filename: "api.bundle.js"
 };
+export const target = "node";

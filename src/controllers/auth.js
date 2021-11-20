@@ -9,7 +9,7 @@ export async function login(req, res) {
     const { username, password } = req.body;
   
     if (!(username && password)) {
-      return res.status(400).send({ error: "Invalid User/Password." });
+        return res.status(400).send({ error: "Invalid User/Password." });
     }
   
     try {
@@ -34,8 +34,8 @@ export async function login(req, res) {
             token,
         });
     } catch (error) {
-      console.error(error);
-      return res.status(500).send({ error: "Ops! Something were wrong when trying to login!" });
+        console.error(error);
+        return res.status(500).send({ error: "Ops! Something were wrong when trying to login!" });
     }
 }
 
@@ -43,7 +43,7 @@ export async function signUp(req, res) {
     const { username, password, isAdmin } = req.body;
 
     if (!(username && password)) {
-      return res.status(400).send({ error: "Invalid name / password" });
+        return res.status(400).send({ error: "Invalid name / password" });
     }
   
     try {
@@ -64,7 +64,7 @@ export async function signUp(req, res) {
         
         return res.status(204).send({});
     } catch (error) {
-      console.error(error);
-      return res.status(500).send({ error: "Ops! There were an error when trying to create account!" });
+        console.error(error);
+        return res.status(500).send({ error: "Ops! There were an error when trying to create account!" });
     }
 }

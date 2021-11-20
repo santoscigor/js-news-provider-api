@@ -1,16 +1,14 @@
-const knexStringcase = require("knex-stringcase");
+import knexStringcase from "knex-stringcase";
 
-module.exports = {
-  development: knexStringcase({
+export const development = knexStringcase({
     client: "postgresql",
     connection: {
-      database: "challenge",
-      password: "postgres",
-      user: "postgres",
+        database: "challenge",
+        password: "postgres",
+        user: "postgres",
     },
     migrations: {
-      directory: "src/migrations",
-      extension: "js",
+        directory: "src/migrations",
+        extension: "js",
     },
-  }),
-};
+});

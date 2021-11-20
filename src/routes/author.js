@@ -4,8 +4,8 @@ import admin from "../middlewares/admin";
 
 const routes = Router();
 
-const author = `/api/admin/authors`;
-const authorById = `/api/admin/authors/:id`;
+const author = "/api/admin/authors";
+const authorById = "/api/admin/authors/:id";
 
 routes.get(author, admin, getAuthors);
 routes.post(author, admin, createAuthor);
